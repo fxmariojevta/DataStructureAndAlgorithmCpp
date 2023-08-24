@@ -14,13 +14,18 @@ int main() {
     }
 
 
-    int largest {INT_MIN};
+    int largest {a[0]};
+    int smallest {a[0]};
     for (int i = 0; i < n; ++i) {
         if (largest < a[i])
             largest = a[i];
+
+        if (smallest > a[i])
+            smallest = a[i];
     }
 
     cout << "Largest element: " << largest << endl;
-
+    cout << "Smalest element: " << smallest << endl;
+    
     return 0;
 }
