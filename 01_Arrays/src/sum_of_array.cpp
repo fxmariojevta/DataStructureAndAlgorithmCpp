@@ -17,7 +17,7 @@ int main() {
         sum += a[i];
     }
 
-    cout << sum << endl;
+    cout << "Sum of array: " << sum << endl;
 
     return 0;
 }
